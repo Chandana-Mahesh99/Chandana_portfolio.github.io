@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Chandana</title>
+    <link rel="shortcut icon" href="img/photo9.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styles for body, header, and footer similar to contact page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Times New Roman', serif;
+            color: #fff; /* Text color for consistency */
+            background-color: #0044cc; /* Background color matching the other pages */
+            overflow: hidden; /* Hide overflow to allow fullscreen */
+            display: flex;
+            flex-direction: column; /* Align children in a column */
+        }
+
+        header {
+            background-color: #003399; /* Consistent dark background for header */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; /* Space between name and nav */
+            align-items: center; /* Center items vertically */
+        }
+
+        header h1 {
+            font-size: 36px; /* Increase font size for header */
+            padding-left: 20px; /* Add padding to the left */
+            color: #fff; /* Header text color */
+            margin: 0; /* Remove margin */
+        }
+
+        nav {
+            padding-right: 20px; /* Add padding to the right */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Yellow hover effect */
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        section {
+            padding: 20px; /* Reduced padding */
+            max-width: 100%; /* Full width */
+            margin: 0; /* Remove margin */
+            flex: 1; /* This allows the section to grow and take available space */
+            overflow-y: auto; /* Allow vertical scrolling if necessary */
+            animation: fadeIn 1.5s ease-out; /* Add animation */
+        }
+
+        section h2 {
+            color: #ffffff; /* Light text color for the heading */
+            text-align: center; /* Centered heading */
+        }
+
+        .resume-container {
+            width: 100%; /* Full width */
+            height: calc(100vh - 160px); /* Full height minus header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto; /* Enable scrolling within the container */
+        }
+
+        .resume-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* No border for iframe */
+        }
+
+        .download-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ffcc00; /* Yellow download link color */
+            text-decoration: none; /* No underline */
+        }
+
+        .download-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: slide in from the bottom */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chandana</h1> <!-- Your name on the left -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="personal_info.html">Personal Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>My Resume</h2>
+        <div class="resume-container">
+            <iframe src="chandana_resume.pdf" title="Chandana's Resume"></iframe>
+        </div>
+        <a class="download-link" href="chandana_resume.pdf" download>Download PDF Version</a>
+    </section>
+</body>
+
+</html>

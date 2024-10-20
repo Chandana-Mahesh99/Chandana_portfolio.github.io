@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Chandana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Times New Roman', serif;
+            background-color: #0044cc; /* Background color matching the other pages */
+            color: #fff; /* Text color for consistency */
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: #003399; /* Consistent dark background for header */
+            padding: 10px 0; /* Increased padding */
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 40px; /* Increased font size */
+            padding-left: 20px;
+            color: #fff; /* Header text color */
+        }
+
+        nav {
+            padding-right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Link color for consistency */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Hover effect */
+        }
+
+        section {
+            display: flex;
+            justify-content: center; /* Center the section */
+            align-items: flex-start; /* Align items at the start */
+            padding: 60px 20px;
+            margin: 20px auto; /* Center the section with auto margin */
+            background: #0044cc; /* Consistent background color */
+            border-radius: 10px;
+            max-width: 1200px; /* Limit max width */
+            animation: fadeIn 1.5s ease-out; /* Add animation */
+        }
+
+        .projects-container {
+            max-width: 800px; /* Set a max width for the container */
+            width: 100%; /* Full width within max */
+            padding: 20px; /* Inner padding */
+            color: #fff; /* Ensure text is white */
+        }
+
+        .project {
+            background: #003399; /* Darker background for projects */
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+            display: flex; /* Flexbox layout for project image and description */
+            align-items: center; /* Align items vertically */
+        }
+
+        .project img {
+            max-width: 150px; /* Adjust max-width for the image */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .project-title {
+            font-weight: bold; /* Bold title for projects */
+            font-size: 18px; /* Increase font size for titles */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: slide in from the bottom */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chandana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="personal_info.html">Personal Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="projects-container">
+            <h2 style="color: #fff; text-align:center; margin-bottom: 40px; font-size: 36px;">My Projects</h2>
+
+            <div class="project">
+                <img src="img/oculardisease.jpeg" alt="Multiple Ocular Disease Detection">
+                <div>
+                    <div class="project-title">Multiple Ocular Disease Detection</div>
+                    <div>This project involves the development of a deep learning model to identify various ocular diseases from fundus images. Using convolutional neural networks (CNNs), I trained the model on a dataset consisting of images labeled for conditions such as diabetic retinopathy and glaucoma. The application of this model can significantly aid in early diagnosis, leading to timely intervention and treatment, ultimately enhancing patient outcomes.</div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/audiobook.jpeg" alt="AudioBook Application">
+                <div>
+                    <div class="project-title">AudioBook Application</div>
+                    <div>This Python-based application converts text content into audio, making literary works accessible to a wider audience, including those with visual impairments or reading difficulties. Users can upload text files, and the application uses text-to-speech technology to produce high-quality audio output. The application also features a user-friendly interface, allowing users to navigate through different chapters easily and control playback settings.</div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/Association-Rule-Mining.png" alt="Association Rule Mining">
+                <div>
+                    <div class="project-title">Association Rule Mining</div>
+                    <div>In this project, I employed the Apriori Algorithm to analyze market basket data to uncover hidden patterns in consumer behavior. By identifying relationships between different items purchased together, this analysis can inform marketing strategies and inventory management. The project involved data preprocessing, applying the algorithm, and visualizing the results to provide actionable insights that can boost sales and customer satisfaction.</div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/banking-systems-pictogram.jpg" alt="Banking Management System">
+                <div>
+                    <div class="project-title">Banking Management System</div>
+                    <div>The Banking Management System is a desktop application designed to manage banking operations efficiently. Built using Python's Tkinter library for the graphical user interface (GUI) and SQL for database management, this project enables users to perform a range of banking activities from a single application.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

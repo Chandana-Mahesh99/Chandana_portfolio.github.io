@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana - Portfolio</title>
+    <link rel="shortcut icon" href="photo9.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Times New Roman', serif;
+            background-color: #0044cc;
+            color: #fff;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column; /* Align children in a column */
+        }
+
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: #003399; /* Consistent dark background for header */
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; /* Space between name and nav */
+            align-items: center; /* Center items vertically */
+        }
+
+        header h1 {
+            font-size: 36px; /* Increase font size for header */
+            padding-left: 20px; /* Add padding to the left */
+            color: #fff; /* Header text color */
+        }
+
+        nav {
+            padding-right: 20px; /* Add padding to the right */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Yellow hover effect */
+        }
+
+        .hero {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            text-align: left;
+            padding: 20px; /* Adjust padding as needed */
+            width: 100%;
+            max-width: 1200px;
+            background-color: #0044cc;
+            animation: fadeInUp 2s ease-out;
+            margin: 20px auto; /* Center the hero section with auto margins */
+        }
+
+        .hero img {
+            width: 270px; /* Adjust image size */
+            height: 270px; /* Adjust image size */
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1s ease-out;
+            margin-right: 60px; /* Space between image and text */
+        }
+
+        .intro {
+            max-width: 600px;
+            margin-left: 10px; /* Space between image and intro */
+        }
+
+        .intro h2 {
+            margin-bottom: 10px;
+            font-size: 32px;
+            color: #fff;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .intro p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #fff;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro {
+                margin: 20px 0 0 0;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chandana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="personal_info.html">Personal Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="img/photo9.jpg" alt="Chandana">
+        <div class="intro">
+            <h2>---Intro---</h2>
+            <p style="font-size: 30px; margin-bottom: 10px;">
+                Masters in Computer Application (MCA) graduate from JSS STU and Passionate about Tech and Music.
+            </p>
+
+            <p>
+                Born and raised in Mysore, I am passionate about building impactful applications through technology. I developed a strong interest in technology and its potential to solve real-world problems. My educational journey began with a Bachelor’s in Computer Applications, followed by a Master’s from JSS STU. My experiences have equipped me with intermediate skills in Python, Java, and SQL, alongside a foundational understanding of data analysis and web development. I am eager to leverage these skills in innovative projects that enhance user experiences and drive meaningful outcomes, while fostering a passion for continuous learning and growth in the ever-evolving tech landscape.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Chandana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Times New Roman', serif;
+            background-color: #0044cc; /* Background color matching the other pages */
+            color: #fff; /* Text color for consistency */
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: #003399; /* Consistent dark background for header */
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            padding-left: 20px;
+            color: #fff; /* Header text color */
+        }
+
+        nav {
+            padding-right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Link color for consistency */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Hover effect */
+        }
+
+        section {
+            display: flex;
+            justify-content: center; /* Center the section */
+            align-items: flex-start; /* Align items at the start */
+            padding: 60px 20px;
+            margin: 20px auto; /* Center the section with auto margin */
+            background: #0044cc; /* Consistent background color */
+            border-radius: 10px;
+            max-width: 1200px; /* Limit max width */
+            animation: fadeIn 1.5s ease-out; /* Add animation */
+        }
+
+        .skills-container {
+            max-width: 800px; /* Set a max width for the container */
+            width: 100%; /* Full width within max */
+            padding: 20px; /* Inner padding */
+            color: #fff; /* Ensure text is white */
+        }
+
+        .skill {
+            background: #003399; /* Darker background for skills */
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-title {
+            font-weight: bold; /* Bold title for skills */
+            font-size: 18px; /* Increase font size for titles */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003399; /* Dark background for footer */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Optional: slide in from the bottom */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chandana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="personal_info.html">Personal Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="skills-container">
+            <h2 style="color: #fff; text-align:center; margin-bottom: 40px; font-size: 36px;">My Skills</h2>
+
+            <div class="skill">
+                <div class="skill-title">Python</div>
+                <div>Learned through data analysis projects and used in my Multiple Ocular Disease Detection project.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Java</div>
+                <div>Utilized in various academic projects and coursework during my Master's program.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">SQL</div>
+                <div>Applied in data retrieval and manipulation for my data analysis projects.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">NoSQL</div>
+                <div>Gained exposure through coursework and practical applications in database management.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">HTML/CSS/JavaScript</div>
+                <div>Utilized in web development projects, including my personal portfolio.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Data Science</div>
+                <div>Learned through coursework and applied in data-driven projects.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Data Analysis</div>
+                <div>Utilized in various projects for insights extraction.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Leadership</div>
+                <div>Demonstrated through group projects and team collaborations.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Collaboration</div>
+                <div>Worked effectively in team settings during academic projects and college events.</div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Problem Solving</div>
+                <div>Applied during complex project challenges and coding competitions.</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
